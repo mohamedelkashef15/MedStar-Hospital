@@ -1,3 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root {
   --light-blue: #1a7bd1;
+  --dark-gray: #2c2d3f;
+  --light-gray: #888;
+  --bg-white: #fdfdfd;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-gray);
+}
+
+
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.text-primary {
+  color: var(--light-blue);
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--light-blue);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #135fa1;
+}
+
+.btn-secondary {
+  background-color: var(--dark-gray);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #4c4f6e;
+}
+
+/* Home Start */
+
+#home .navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+
+#home .navbar nav {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+#home .navbar .logo {
+  width: 250px;
+}
+
+#home .navbar ul {
+  display: flex;
+}
+
+#home .navbar ul li a {
+  margin: 0 15px;
+  color: var(--dark-gray);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#home .navbar ul li a:hover {
+  color: var(--light-blue);
+}
+
+#home .home-content {
+  background: url("./images/bg-home.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+#home .home-content .col {
+  width: 1200px;
+  padding: 0 2rem;
+  margin: auto;
+}
+
+#home .home-content .col small {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+#home .home-content .col small img {
+  vertical-align: middle;
+}
+
+#home .home-content .col h1 {
+  font-size: 40px;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+#home .home-content .col p {
+  margin: 10px 0 30px;
+  font-size: 14px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+#home .home-content .col a {
+  margin-right: 15px;
+}
+
+/* Home End */
