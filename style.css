@@ -227,3 +227,51 @@ h3 {
 }
 
 /* About End */
+/* Info Start */
+#info {
+  background: url("./images/info-bg.jpg") center center/cover no-repeat;
+  position: relative;
+  z-index: 1;
+  padding: 7rem 0;
+  color: #fff;
+}
+
+/* ? Explain top, left after adding padding & z-index  */
+#info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--light-blue);
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+#info .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#info .row .col {
+  display: flex;
+  align-items: center;
+}
+
+#info .row .col i {
+  font-size: 30px;
+  padding: 20px;
+  margin-right: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+#info .row .col span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#info .row .col p {}
+
+/* Info End */
