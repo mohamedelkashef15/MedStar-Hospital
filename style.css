@@ -170,7 +170,8 @@ p {
   background: url("./images/bg-home.jpg") center center/cover no-repeat;
   display: flex;
   align-items: center;
-  min-height: 90vh;
+  min-height: 100vh;
+  margin-top: 2rem;
 }
 
 #home .home-content .col {
@@ -417,7 +418,8 @@ p {
 
 /* Services End */
 /* price table Start */
-#price-table {
+#price-table,
+#doctors {
   background-color: var(--bg-white);
   padding: 6rem 0;
 }
@@ -485,3 +487,42 @@ p {
 }
 
 /* price table End */
+
+/* Doctors start */
+#doctors .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+  column-gap: 3rem;
+  text-align: center;
+}
+
+#doctors .row .item {
+  background-color: #fff;
+}
+
+#doctors .row img {
+  width: 100%;
+  height: 350px;
+}
+
+#doctors .row .item .item-details {
+  padding: 2rem 0;
+}
+
+#doctors .row .item .item-details h3 {
+  font-size: 22px;
+}
+
+#doctors .row .item .item-details p {
+  color: var(--light-blue);
+  font-size: 14px;
+  margin: 10px 0 20px;
+  font-weight: 500;
+}
+
+#doctors .row .item .item-details a {
+  border-radius: 20px;
+}
+
+/* Doctors end */
