@@ -4,7 +4,7 @@
   --light-blue: #1a7bd1;
   --dark-gray: #2c2d3f;
   --light-gray: #757575;
-  --bg-white: #fdfdfd;
+  --bg-white: #f1f1f1;
 }
 
 * {
@@ -416,3 +416,72 @@ p {
 }
 
 /* Services End */
+/* price table Start */
+#price-table {
+  background-color: var(--bg-white);
+  padding: 6rem 0;
+}
+
+#price-table .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  margin-top: 5rem;
+}
+
+#price-table .row .col {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border: 1px solid #ddd;
+}
+
+#price-table .row .col .price-details {
+  text-align: center;
+}
+
+#price-table .row .col .price-details i {
+  font-size: 60px;
+  color: var(--light-blue);
+}
+
+#price-table .row .col .price-details h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+#price-table .row .col .price-details p {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--light-blue);
+}
+
+#price-table .row .col .price-details p span {
+  font-size: 16px;
+  color: var(--light-gray);
+  font-weight: 300;
+}
+
+#price-table .row .col ul {
+  margin-top: 2rem;
+}
+
+#price-table .row .col ul li {
+  margin: 15px 0;
+  color: var(--light-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#price-table .row .col ul li i.fa-circle-check {
+  color: var(--light-blue);
+}
+
+#price-table .row .col a {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* price table End */
