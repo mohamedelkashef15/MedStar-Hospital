@@ -4,7 +4,7 @@
   --light-blue: #1a7bd1;
   --dark-gray: #2c2d3f;
   --light-gray: #757575;
-  --bg-white: #f1f1f1;
+  --bg-white: #f6f6f6;
 }
 
 * {
@@ -419,7 +419,8 @@ p {
 /* Services End */
 /* price table Start */
 #price-table,
-#doctors {
+#doctors,
+#contact {
   background-color: var(--bg-white);
   padding: 6rem 0;
 }
@@ -503,7 +504,7 @@ p {
 
 #doctors .row img {
   width: 100%;
-  height: 350px;
+  height: 300px;
 }
 
 #doctors .row .item .item-details {
@@ -542,11 +543,11 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 #blogs .row .col {
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 #blogs .row img {
@@ -588,3 +589,39 @@ p {
 }
 
 /* Blogs End */
+/* Contact Start */
+#contact .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+  margin-top: 3rem;
+}
+
+#contact .row .form-control {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#contact .row .form-control input,
+#contact .row .form-control select,
+#contact textarea {
+  padding: 15px;
+  color: var(--light-gray);
+  border: 1px solid #ddd;
+  outline-color: var(--light-blue);
+}
+
+#contact textarea {
+  width: 100%;
+}
+
+#contact .btn {
+  padding: 15px 30px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Contact End */
