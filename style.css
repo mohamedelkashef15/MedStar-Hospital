@@ -261,17 +261,19 @@ p {
 
 /* About End */
 /* Info Start */
-#info {
+#info,
+#brand {
   background: url("./images/info-bg.jpg") center center/cover no-repeat;
   position: relative;
   z-index: 1;
-  padding: 7rem 0;
+  padding: 6rem 0;
   color: #fff;
 }
 
 /* ? Explain top, left after adding padding & z-index  */
 #info::before,
-#call::before {
+#call::before,
+#brand::before {
   content: "";
   position: absolute;
   top: 0;
@@ -526,3 +528,16 @@ p {
 }
 
 /* Doctors end */
+
+/* Brand start */
+#brand .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#brand .row img {
+  width: 200px;
+}
+
+/* Brand end */
