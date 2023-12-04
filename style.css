@@ -664,41 +664,43 @@ p {
 
 /* Footer Start */
 /* footer top start */
-#footer {
-  padding: 6rem 0;
+
+#footer .footer-top {
   background-color: var(--light-blue);
 }
 
-#footer .footer-top {
+#footer .footer-top .row {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
   column-gap: 3rem;
+  padding: 6rem 0;
 }
 
-#footer .footer-top p,
-#footer .footer-top h2,
-#footer .footer-top a,
-#footer .footer-top li,
-#footer .footer-top .col-4 input::placeholder {
+#footer .footer-top .row p,
+#footer .footer-top .row h2,
+#footer .footer-top .row a,
+#footer .footer-top .row li,
+#footer .footer-top .row .col-4 input::placeholder,
+#footer .copyright p {
   color: #fff;
 }
 
-#footer .footer-top h2 {
+#footer .footer-top .row h2 {
   font-size: 22px;
 }
 
-#footer .footer-top hr {
+#footer .footer-top .row hr {
   width: 50px;
   height: 3px;
   background-color: #fff;
   margin: 10px 0 2rem;
 }
 
-#footer .footer-top .social {
+#footer .footer-top .row .social {
   margin-top: 30px;
 }
 
-#footer .footer-top .social a i {
+#footer .footer-top .row .social a i {
   font-size: 14px;
   width: 35px;
   height: 35px;
@@ -711,33 +713,33 @@ p {
   /* hover with info */
 }
 
-#footer .footer-top .col-2 li {
+#footer .footer-top .row .col-2 li {
   margin: 10px 0;
   transition: all 0.3s ease;
 }
 
-#footer .footer-top .col-2 li i {
+#footer .footer-top .row .col-2 li i {
   margin-right: 5px;
 }
 
-#footer .footer-top .col-2 li:hover {
+#footer .footer-top .row .col-2 li:hover {
   transform: translateX(10px);
 }
 
-#footer .footer-top .col-3 p,
-#footer .footer-top .col-4 p {
+#footer .footer-top .row .col-3 p,
+#footer .footer-top .row .col-4 p {
   margin-bottom: 20px;
 }
 
-#footer .footer-top .col-3 ul li {
+#footer .footer-top .row .col-3 ul li {
   margin: 10px 0;
 }
 
-#footer .footer-top .col-4 {
+#footer .footer-top .row .col-4 {
   position: relative;
 }
 
-#footer .footer-top .col-4 input {
+#footer .footer-top .row .col-4 input {
   padding: 15px;
   width: 100%;
   color: #fff;
@@ -747,7 +749,7 @@ p {
   outline: none;
 }
 
-#footer .footer-top .col-4 button {
+#footer .footer-top .row .col-4 button {
   padding: 15px;
   position: absolute;
   right: 0px;
@@ -756,16 +758,29 @@ p {
   border-bottom-right-radius: 5px;
 }
 
-#footer .footer-top .col-4 button i {
+#footer .footer-top .row .col-4 button i {
   color: var(--light-blue);
   font-size: 16px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-#footer .footer-top .col-4 button i:hover {
+#footer .footer-top .row .col-4 button i:hover {
   color: var(--dark-gray);
 }
 
 /* footer top end */
+/* copyright start */
+#footer .copyright {
+  background-color: #135fa1;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#footer .copyright a {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* copyright end */
 /* Footer End */
