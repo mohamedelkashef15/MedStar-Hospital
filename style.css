@@ -5,6 +5,7 @@
   --dark-gray: #2c2d3f;
   --light-gray: #757575;
   --bg-white: #f6f6f6;
+  --bg-newsletter: #edf2ff;
 }
 
 * {
@@ -625,3 +626,37 @@ p {
 }
 
 /* Contact End */
+
+/* Newsletter Start */
+#newsletter {
+  padding: 5rem 0;
+  background-color: var(--bg-newsletter);
+}
+
+#newsletter .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+}
+
+#newsletter .row .col h2 {
+  margin-bottom: 10px;
+}
+
+#newsletter form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+#newsletter form input,
+#newsletter form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Newsletter End */
