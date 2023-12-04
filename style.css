@@ -296,6 +296,7 @@ p {
 
 #info .row .col {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -491,6 +492,22 @@ p {
 
 /* price table End */
 
+/* Brand start */
+#brand .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#brand .row img {
+  max-width: 200px;
+  /* for responsive */
+  margin-bottom: 20px;
+}
+
+/* Brand end */
+
 /* Doctors start */
 #doctors .row {
   display: grid;
@@ -528,18 +545,6 @@ p {
 }
 
 /* Doctors end */
-/* Brand start */
-#brand .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#brand .row img {
-  width: 200px;
-}
-
-/* Brand end */
 /* Blogs Start */
 #blogs .row {
   display: grid;
@@ -613,6 +618,8 @@ p {
   color: var(--light-gray);
   border: 1px solid #ddd;
   outline-color: var(--light-blue);
+  /* for responsive */
+  width: 100%;
 }
 
 #contact textarea {
@@ -624,6 +631,10 @@ p {
   margin-top: 20px;
   border: none;
   cursor: pointer;
+}
+
+#contact .row img {
+  max-width: 100%;
 }
 
 /* Contact End */
@@ -784,3 +795,97 @@ p {
 
 /* copyright end */
 /* Footer End */
+
+/* Responsive Start */
+@media (max-width: 800px) {
+  #home .navbar .logo {
+    width: 150px;
+  }
+
+  #home .navbar ul li a {
+    margin: 0 5px;
+  }
+
+  #about .row,
+  #help .row,
+  #contact .row,
+  #newsletter .row {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  #help .row .col:first-child::before,
+  #help .row .col:nth-child(2)::before {
+    display: none;
+  }
+
+  #info .row,
+  #services .row,
+  #price-table .row,
+  #doctors .row,
+  #blogs .row,
+  #footer .footer-top .row {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+
+  #contact .row img {
+    width: 100%;
+    order: 1;
+  }
+
+  #contact .row form {
+    order: 2;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .title h2,
+  #call .call-content h2 {
+    font-size: 22px;
+  }
+
+  #home .navbar nav {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  #home .home-content .col h1 {
+    font-size: 32px;
+  }
+
+  #home .home-content .col a {
+    margin-bottom: 10px;
+  }
+
+  #info .row {
+    grid-template-columns: 1fr;
+    grid-row: 3rem;
+  }
+
+  #info .row .col {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #info .row .col i {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #brand .row {
+    justify-content: center;
+  }
+
+  #services .row,
+  #price-table .row,
+  #doctors .row,
+  #blogs .row,
+  #footer .footer-top .row {
+    grid-template-columns: 1fr;
+    margin: none;
+  }
+}
+
+/* Responsive End */
