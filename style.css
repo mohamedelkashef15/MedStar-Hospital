@@ -413,10 +413,7 @@ p {
 
 #services .row .item h3 {
   font-size: 20px;
-}
-
-#services .row .item p {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Services End */
