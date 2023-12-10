@@ -583,7 +583,6 @@ p {
   padding: 5px 15px;
   background-color: var(--light-blue);
   color: #fff;
-  font-size: 14px;
   border-radius: 5px;
 }
 
@@ -595,10 +594,9 @@ p {
 /* Blogs End */
 /* Contact Start */
 #contact .row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 5rem;
-  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
 }
 
 #contact .row .form-control {
@@ -625,7 +623,7 @@ p {
 
 #contact .btn {
   padding: 15px 30px;
-  margin-top: 20px;
+  margin-top: 25px;
   border: none;
   cursor: pointer;
 }
