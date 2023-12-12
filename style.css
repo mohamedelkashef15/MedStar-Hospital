@@ -784,6 +784,7 @@ p {
 
   #home .navbar nav ul a {
     margin: 0 5px;
+    font-size: 14px;
   }
 
   #about .row,
